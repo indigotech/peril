@@ -1,0 +1,10 @@
+{
+  "settings": {
+    "onlyForOrgMembers": true
+  },
+  "rules": {
+    "pull_request": "indigotech/peril@dangerfiles/pr.ts",
+    "issues": "indigotech/peril@dangerfiles/issues.ts"
+  },
+  "repos": {}
+}
