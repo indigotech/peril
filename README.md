@@ -3,9 +3,9 @@
 More info at [danger/peril](https://github.com/danger/peril)
 
 # Local test
-
+ 
 We need to validate if our checks are returning results as expected. This is a simple way:
-
+ 
 - Create a local empty project
 - Add `package.json` with `danger` and `jest`:
     ```json
@@ -33,6 +33,6 @@ We need to validate if our checks are returning results as expected. This is a s
     ```
 - `node` >= `6.5.0`
 - Run `yarn install`
-- Copy a current dangerfile in use like [issues.ts](/dangerfiles/issues.ts) or [pr.ts](/dangerfile/pr.ts), rename to `dangerfile.ts` and add your checks
+- Edit a dangerfile in use like [issues.ts](/dangerfiles/issues.ts) or [pr.ts](/dangerfile/pr.ts) with new checks
 - [Export your danger github token](https://github.com/indigotech/danger#it-is-asking-me-for-a-danger_github_api_token)
-- Run `yarn danger pr <URL_pr_to_be_tested>` you can pick any open pull request
+- Run `yarn danger -- pr <URL_pr_to_be_tested> --dangerfile ./dangerfiles/<dangerfile_you_edited>.ts` (you can pick any open pull request)
