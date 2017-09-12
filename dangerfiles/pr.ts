@@ -1,18 +1,7 @@
-import { TextDiff, danger, fail, markdown, message, schedule, warn } from 'danger'
+import {danger, fail, warn} from 'danger';
 
-message('Hello from Peril on your PR.');
-
-if (danger.git.modified_files.length === 0) {
-  message('There were no modified files');
-} else {
-
-  let file = danger.git.modified_files[0];
-  schedule(async () => {
-    let diff = (await danger.git.diffForFile(file) as TextDiff);
-    if (diff) {
-      message(`Diff for ${file}: ${diff.diff}`);
-    } else {
-      message(`No diff for ${file}`);
-    }
-  });
+if (!danger.github.pr.body) {
+  fail('Please add a description to your PR.');
+} else if (danger.github.pr.body.length < 10) {
+  warn('Your PR description is too short, please elaborate more.');
 }
