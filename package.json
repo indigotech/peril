@@ -5,8 +5,31 @@
   "repository": "https://github.com/indigotech/peril",
   "author": "felipe Sabino <felipe@taqtile.com>",
   "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
   "dependencies": {
     "danger": "^0.18.0",
+    "jest": "^21.0.2",
+    "ts-jest": "^21.0.0",
     "typescript": "^2.3.2"
+  },
+  "devDependencies": {
+    "taqtile-dangerjs-plugin": "^0.0.2"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.(ts|tsx)$": "./node_modules/ts-jest/preprocessor.js"
+    },
+    "testMatch": [
+      "**/*test.ts"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json",
+      "jsx"
+    ]
   }
 }

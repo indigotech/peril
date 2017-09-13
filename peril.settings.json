@@ -1,6 +1,7 @@
 {
   "settings": {
-    "onlyForOrgMembers": true
+    "onlyForOrgMembers": true,
+    "modules": ["taqtile-dangerjs-plugin"]
   },
   "rules": {
     "pull_request": "indigotech/peril@dangerfiles/pr.ts",
