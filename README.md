@@ -21,7 +21,7 @@ We need to validate if our checks are returning results as expected. This is a s
 - [x] Warns if description provided is too short
 - [ ] Warn if some files/folders to be changed/committed like `.gitignore`, `Gemfile`, `Gemfile.lock`, `.travis.yml`
 - [ ] `>>>` Strings to make sure rebase was successful
-- [ ] Big PRs
+- [x] Big PRs
 - [ ] Warn when `Gemfile` was modified and `Gemfile.lock` was not
 - [ ] Warn when Amazon Secret Key is hardcoded
 - [ ] Warn when `Dangerfile` was modified
