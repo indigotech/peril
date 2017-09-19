@@ -15,7 +15,7 @@
     "typescript": "^2.3.2"
   },
   "devDependencies": {
-    "taqtile-dangerjs-plugin": "^0.0.2"
+    "taqtile-dangerjs-plugin": "^0.0.3"
   },
   "jest": {
     "transform": {
@@ -31,5 +31,10 @@
       "json",
       "jsx"
     ]
+  },
+  "engines": {
+    "node": "8.4.0",
+    "npm": "5.3.0",
+    "yarn": "0.27.5"
   }
 }
