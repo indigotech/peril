@@ -1,4 +1,7 @@
 // dangerfile.js
-import taqtileDangerjsPlugin from 'taqtile-dangerjs-plugin';
+import { schedule } from 'danger'
+import taqtileDangerjsPlugin  from 'taqtile-dangerjs-plugin'
 
-taqtileDangerjsPlugin();
+schedule(async() => {
+  await taqtileDangerjsPlugin();
+});
