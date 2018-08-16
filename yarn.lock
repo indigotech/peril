@@ -2974,9 +2974,9 @@ tape@^4.6.3:
     string.prototype.trim "~1.1.2"
     through "~2.3.8"
 
-taqtile-dangerjs-plugin@^0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/taqtile-dangerjs-plugin/-/taqtile-dangerjs-plugin-0.0.3.tgz#73f3802f317326213dcaf0524737323279a8f15c"
+taqtile-dangerjs-plugin@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/taqtile-dangerjs-plugin/-/taqtile-dangerjs-plugin-0.0.4.tgz#824f154d228dc17dc36edeb36082234bd7b226a6"
   optionalDependencies:
     esdoc "^0.5.2"
 
